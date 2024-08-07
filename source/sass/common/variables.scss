@@ -1,0 +1,14 @@
+// Devices
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+// Retina
+$retina-resolution: 2dppx;
+
+// Colors
+$basic-white: #ffffff;
+$basic-grey: #2d383f;
+$basic-blue: #0266c1;
+$overlay-light: linear-gradient(112deg, rgba(15, 20, 41, 33%) 17%, rgba(15, 20, 41, 0) 95%);
+$overlay-dark: linear-gradient(0deg, rgba(0, 0, 0, 60%) 22%, rgba(0, 0, 0, 0) 60%);
