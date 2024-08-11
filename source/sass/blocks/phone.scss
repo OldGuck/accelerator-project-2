@@ -1,0 +1,52 @@
+.phone {
+  height: 100%;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: right;
+  text-decoration: none;
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 4px;
+
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+
+  &:hover {
+    opacity: 50%;
+  }
+
+  &:focus {
+    outline: none;
+    color: $primary-grey;
+  }
+
+  &--dark {
+    color: $primary-grey;
+
+    &:hover {
+      color: $basic-blue;
+      opacity: 10%;
+    }
+
+    &:focus {
+      color: $basic-blue;
+    }
+  }
+
+  &:active {
+    color: $active;
+    opacity: 100%;
+  }
+
+  &--disabled {
+    pointer-events: none;
+    color: $disabled;
+  }
+}

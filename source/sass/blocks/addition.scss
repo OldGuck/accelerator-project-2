@@ -1,0 +1,146 @@
+.addition__container {
+  padding-top: 23px;
+  padding-bottom: 13px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 34px;
+    padding-bottom: 13px;
+
+    display: grid;
+    grid-template-columns: min-content auto;
+    gap: 27px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 120px 25px;
+
+    grid-template-columns: min-content auto 200px;
+    gap: 15px 0;
+  }
+}
+
+.addition__logo-link {
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    align-self: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 9px 29px;
+  }
+
+  &:hover {
+    opacity: 70%;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 50%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.addition__phone {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.addition__navigation-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1px 50px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+.addition__navigation-item {
+  &--training {
+    grid-row: 2;
+  }
+
+  &--about {
+    grid-row: 3;
+  }
+}
+
+.addition__navigation-link {
+  padding: 4px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 0 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 19px 0 26px;
+  }
+}
+
+.addition__navigation-text {
+  padding: 2px 4px;
+
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+
+  border: 1px transparent solid;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+  }
+}
+
+.addition__privacy-policy-link {
+  width: 100%;
+
+  padding: 7px 0;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  text-decoration: none;
+  text-align: center;
+  color: $primary-grey;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  &:hover {
+    opacity: 70%;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 50%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}

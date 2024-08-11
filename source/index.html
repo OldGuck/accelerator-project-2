@@ -20,16 +20,269 @@
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
 
-    <header class="header" data-test="header">
-
+    <header class="header" data-test="header" id="header">
+      <div class="header__container container">
+        <button class="header__toggle-button header__toggle-button--closed" type="button">
+          <span class="visually-hidden">
+            Открыть меню навигации.
+          </span>
+        </button>
+        <a class="header__logo-link logo">
+          <img class="header__logo" src="/__spritemap#sprite-logo-view" width="142" height="42" alt="Логотип Lifetour.">
+        </a>
+        <nav class="header__navigation header__navigation--closed navigation">
+          <ul class="header__navigation-list navigation__list">
+            <li class="header__navigation-item navigation__item">
+              <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+              <a class="header__navigation-link navigation__link" href="#tours">
+                <span class="header__navigation-text navigation__text">
+                  Туры
+                </span>
+              </a>
+            </li>
+            <li class="header__navigation-item navigation__item">
+              <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+              <a class="header__navigation-link navigation__link" href="#training">
+                <span class="header__navigation-text navigation__text">
+                  Обучение
+                </span>
+              </a>
+            </li>
+            <li class="header__navigation-item navigation__item">
+              <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+              <a class="header__navigation-link navigation__link" href="#about">
+                <span class="header__navigation-text navigation__text">
+                  О нас
+                </span>
+              </a>
+            </li>
+            <li class="header__navigation-item navigation__item">
+              <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+              <a class="header__navigation-link navigation__link" href="#reviews">
+                <span class="header__navigation-text navigation__text">
+                  Отзывы
+                </span>
+              </a>
+            </li>
+            <li class="header__navigation-item navigation__item">
+              <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+              <a class="header__navigation-link navigation__link" href="#gallery">
+                <span class="header__navigation-text navigation__text">
+                  Фотографии
+                </span>
+              </a>
+            </li>
+            <li class="header__navigation-item navigation__item">
+              <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+              <a class="header__navigation-link navigation__link" href="#contacts">
+                <span class="header__navigation-text navigation__text">
+                  Контакты
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Для состояния disabled необходимо добавить класс phone--disabled -->
+        <a class="header__phone phone" href="tel:88000000000">
+          8 800 000-00-00
+        </a>
+      </div>
     </header>
 
     <main class="main-container">
-
+      <section class="form" data-test="form">
+        <div class="form__container container">
+          <h2>
+            Остались вопросы?
+          </h2>
+          <p>
+            Заполните форму и наш оператор свяжется <br>с вами для консультации.
+          </p>
+          <form class="form__main-wrapper" method="post" action="https://echo.htmlacademy.ru">
+            <div class="form__input-wrapper">
+              <label class="visually-hidden" for="phone">
+                Введите номер телефона
+              </label>
+              <input class="form__input form__input--phone" id="phone" type="text" name="phone" placeholder="Телефон" required>
+            </div>
+            <div class="form__input-wrapper">
+              <label class="visually-hidden" for="email">
+                Введите email
+              </label>
+              <input class="form__input form__input--email" id="email" type="email" name="email" placeholder="Email" required>
+            </div>
+            <button class="form__button button" type="submit">
+              Отправить
+            </button>
+            <!-- <span class="form__error form__error--phone">
+            </span>
+            <span class="form__error form__error--email">
+            </span> -->
+          </form>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
+      <section class="contacts">
+        <div class="contacts__container container">
+          <div class="contacts__text-wrapper">
+            <h2 class="contacts__title main-title" data-main-title="Контакты">
+              Контакты
+            </h2>
+            <p>
+              Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.
+            </p>
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--phone">
+                <h3 class="contacts__name">
+                  Телефон
+                </h3>
+                <a class="contacts__text contacts__text--interactive" href="tel:+79837454545">
+                  +7 983 745-45-45
+                </a>
+              </li>
+              <li class="contacts__item contacts__item--mail">
+                <h3 class="contacts__name">
+                  Email
+                </h3>
+                <a class="contacts__text contacts__text--interactive" href="mailto:info@lifetour.com">
+                  info@lifetour.com
+                </a>
+              </li>
+              <li class="contacts__item contacts__item--address">
+                <h3 class="contacts__name">
+                  Адрес
+                </h3>
+                <span class="contacts__text">
+                  г. Москва, пр-т Мира, <br>д. 14, офис 101
+                </span>
+              </li>
+            </ul>
+          </div>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="./img/map-desktop@1x.webp 1x, ./img/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet@1x.webp 1x, ./img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="./img/map-mobile@1x.webp 1x, ./img/map-mobile@2x.webp 2x">
+            <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x">
+            <source type="image/jpg" media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x">
+            <img class="contacts__map" src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" width="320" height="343" alt="Мы на карте г. Москва, пр-т Мира, д. 14, офис 101.">
+          </picture>
+        </div>
+      </section>
+      <section class="addition">
+        <div class="addition__container container">
+          <h2 class="visually-hidden">
+            Дополнительная навигация
+          </h2>
+          <a class="addition__logo-link logo" href="#header">
+            <img class="addition__logo" src="/__spritemap#sprite-logo-dark-view" width="142" height="42" alt="Логотип Lifetour.">
+            <span class="visually-hidden">
+              Перейти в начало страницы.
+            </span>
+          </a>
+          <nav class="addition__navigation navigation">
+            <ul class="addition__navigation-list navigation__list">
+              <li class="addition__navigation-item navigation__item">
+                <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+                <a class="addition__navigation-link navigation__link navigation__link--dark" href="#tours">
+                  <span class="addition__navigation-text navigation__text navigation__text--dark">
+                    Туры
+                  </span>
+                </a>
+              </li>
+              <li class="addition__navigation-item addition__navigation-item--training navigation__item">
+                <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+                <a class="addition__navigation-link navigation__link navigation__link--dark" href="#training">
+                  <span class="addition__navigation-text navigation__text navigation__text--dark">
+                    Обучение
+                  </span>
+                </a>
+              </li>
+              <li class="addition__navigation-item addition__navigation-item--about navigation__item">
+                <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+                <a class="addition__navigation-link navigation__link navigation__link--dark" href="#about">
+                  <span class="addition__navigation-text navigation__text navigation__text--dark">
+                    О нас
+                  </span>
+                </a>
+              </li>
+              <li class="addition__navigation-item navigation__item">
+                <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+                <a class="addition__navigation-link navigation__link navigation__link--dark" href="#reviews">
+                  <span class="addition__navigation-text navigation__text navigation__text--dark">
+                    Отзывы
+                  </span>
+                </a>
+              </li>
+              <li class="addition__navigation-item navigation__item">
+                <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+                <a class="addition__navigation-link navigation__link navigation__link--dark" href="#gallery">
+                  <span class="addition__navigation-text navigation__text navigation__text--dark">
+                    Фотографии
+                  </span>
+                </a>
+              </li>
+              <li class="addition__navigation-item navigation__item">
+                <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+                <a class="addition__navigation-link navigation__link navigation__link--dark" href="#contacts">
+                  <span class="addition__navigation-text navigation__text navigation__text--dark">
+                    Контакты
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Для состояния disabled необходимо добавить класс phone--disabled -->
+          <a class="addition__phone phone phone--dark" href="tel:88007253232">
+            8 800 725-32-32
+          </a>
 
+          <div class="socials">
+            <h2 class="visually-hidden">
+              Социальные сети
+            </h2>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <!-- Для состояния disabled необходимо добавить класс socials__link--disabled -->
+                <a class="socials__link" href="https://vk.com/">
+                  <svg class="socials__icon" width="16" height="9">
+                    <use href="/__spritemap#sprite-vk"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Вконтакте.
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <!-- Для состояния disabled необходимо добавить класс socials__link--disabled -->
+                <a class="socials__link" href="https://ok.ru/">
+                  <svg class="socials__icon" width="9" height="16">
+                    <use href="/__spritemap#sprite-ok"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Одноклассники.
+                  </span>
+                </a>
+              </li>
+              <li class="socials__item">
+                <!-- Для состояния disabled необходимо добавить класс socials__link--disabled -->
+                <a class="socials__link" href="https://www.reddit.com/">
+                  <svg class="socials__icon" width="14" height="15">
+                    <use href="/__spritemap#sprite-reddit"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Реддит.
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="addition__privacy-policy-link" href="#">
+            Политика конфиденциальности
+          </a>
+        </div>
+      </section>
     </footer>
 
     <!-- примеры требуемых атрибутов data-test="*" -->
