@@ -1,0 +1,184 @@
+.advantages__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
+}
+
+.advantages__title {
+  margin-bottom: 49px;
+
+  text-align: center;
+
+  &::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 120px;
+  }
+}
+
+.advantages__swiper-wrapper {
+  @media (min-width: $desktop-width) {
+    overflow: hidden;
+
+    width: 100%;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: flex-start;
+
+    // min-width: 0;
+  }
+}
+
+.advantages__item {
+  position: relative;
+
+  padding: 19px 9px;
+
+  text-align: center;
+  color: $primary-grey;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+
+  border: 1px rgba($basic-blue, 10%) solid;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+
+    padding: 29px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 380px;
+    min-width: 380px;
+    height: auto;
+
+    padding: 39px 19px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 42px;
+    height: 42px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 48px;
+      height: 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 54px;
+      height: 54px;
+    }
+  }
+
+  &--safety::before {
+    background-image: url("/__spritemap#sprite-safety-view");
+  }
+
+  &--knowledge::before {
+    background-image: url("/__spritemap#sprite-knowledge-view");
+  }
+
+  &--equipment::before {
+    background-image: url("/__spritemap#sprite-equipment-view");
+  }
+
+  &--route::before {
+    background-image: url("/__spritemap#sprite-safety-view");
+  }
+
+  &--ecology::before {
+    background-image: url("/__spritemap#sprite-ecology-view");
+  }
+
+  h3 {
+    margin: 0;
+    padding-top: 62px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 73px;
+
+      font-size: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 84px;
+
+      font-size: 18px;
+    }
+  }
+
+  p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}
+
+.advantages__button-wrapper {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+    padding: 0 120px;
+
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+  }
+}
