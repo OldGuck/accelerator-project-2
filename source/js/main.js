@@ -4,3 +4,4 @@
 // import 'swiper/css';
 
 import './navigation';
+import './tours';
