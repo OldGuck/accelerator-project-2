@@ -12,14 +12,12 @@ if (desktop.matches) {
     simulateTouch: true,
     touchRatio: 1,
 
-    slidesPerView: 3.5,
+    slidesPerView: "auto",
     spaceBetween: 30,
 
-    // за раз продистываем 2 слайда
-    slidesPerGroup: 1,
+    slidesPerGroup: 2,
 
     centeredSlides: true,
-
     initialSlide: 2,
   });
 }

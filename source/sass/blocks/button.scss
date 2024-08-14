@@ -1,9 +1,9 @@
 .button {
-  padding: 20px;
-
   font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
   color: $basic-white;
 
-  border: none;
+  border: 1px $basic-blue solid;
   background-color: $basic-blue;
 }
