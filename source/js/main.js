@@ -5,4 +5,5 @@
 
 import './navigation';
 import './tours';
+import './training';
 import './advantages';

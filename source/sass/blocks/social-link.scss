@@ -1,0 +1,37 @@
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  fill: $primary-grey;
+  border: 1px rgba($primary-grey, 30%) solid;
+
+  &:hover {
+    border-color: $primary-grey;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: transparent;
+  }
+
+  &:active {
+    background-color: $basic-blue;
+    border-color: $basic-blue;
+
+    .social-link__icon {
+      fill: $basic-white;
+    }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    border-color: rgba($primary-grey, 30%);
+
+    fill: rgba($primary-grey, 30%);
+  }
+}
+
+.social-link__icon {
+  fill: inherit;
+}
