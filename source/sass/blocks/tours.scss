@@ -64,6 +64,8 @@
 }
 
 .tours__item {
+  position: relative;
+
   margin: auto 0;
 
   background-color: rgb(133, 200, 245);
@@ -145,11 +147,14 @@
   &::before {
     content: "";
     position: absolute;
+
     width: 20px;
     height: 20px;
+
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+
     background-repeat: no-repeat;
   }
 

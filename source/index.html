@@ -90,6 +90,134 @@
     </header>
 
     <main class="main-container">
+      <section class="hero" data-test="hero">
+        <div class="hero__container container">
+          <h1 class="visually-hidden">
+            Lifetour - захватывающие путешествия
+          </h1>
+          <h2 class="visually-hidden">
+            Новые маршруты
+          </h2>
+          <div class="hero__swiper-wrapper swiper-container">
+            <ul class="hero__list swiper-wrapper">
+              <li class="hero__item swiper-slide">
+                <div class="hero__picture-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/hero-1-desktop@1x.webp 1x, ./img/hero-1-desktop@2x.webp 2x" width="1440" height="800">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/hero-1-tablet@1x.webp 1x, ./img/hero-1-tablet@2x.webp 2x" width="768" height="1034">
+                    <source type="image/webp" srcset="./img/hero-1-mobile@1x.webp 1x, ./img/hero-1-mobile@2x.webp 2x" width="320" height="568">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/hero-1-desktop@1x.jpg 1x, ./img/hero-1-desktop@2x.jpg 2x" width="1440" height="800">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/hero-1-tablet@1x.jpg 1x, ./img/hero-1-tablet@2x.jpg 2x" width="768" height="1034">
+                    <img class="hero__picture" src="./img/hero-1-mobile@1x.jpg" srcset="./img/hero-1-mobile@2x.jpg 2x" width="320" height="568" alt="Вершины Кавказа в тумане.">
+                  </picture>
+                </div>
+                <div class="hero__text-wrapper">
+                  <h3>
+                    Захватывающие вершины Кавказа
+                  </h3>
+                  <p>
+                    В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.
+                  </p>
+                  <a class="hero__link button" href="#">
+                    Смотреть тур
+                  </a>
+                </div>
+                <div class="hero__information-wrapper">
+                  <span class="hero__information hero__information--duration ">
+                    6 дней/5 ночей
+                  </span>
+                  <span class="hero__information hero__information--difficulty">
+                    Высокая сложность
+                  </span>
+                </div>
+              </li>
+              <li class="hero__item swiper-slide">
+                <div class="hero__picture-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/hero-2-desktop@1x.webp 1x, ./img/hero-2-desktop@2x.webp 2x" width="1440" height="800">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/hero-2-tablet@1x.webp 1x, ./img/hero-2-tablet@2x.webp 2x" width="768" height="1034">
+                    <source type="image/webp" srcset="./img/hero-2-mobile@1x.webp 1x, ./img/hero-2-mobile@2x.webp 2x" width="320" height="568">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/hero-2-desktop@1x.jpg 1x, ./img/hero-2-desktop@2x.jpg 2x" width="1440" height="800">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/hero-2-tablet@1x.jpg 1x, ./img/hero-2-tablet@2x.jpg 2x" width="768" height="1034">
+                    <img class="hero__picture" src="./img/hero-2-mobile@1x.jpg" srcset="./img/hero-2-mobile@2x.jpg 2x" width="320" height="568" alt="Подножие Камчатки в тумане.">
+                  </picture>
+                </div>
+                <div class="hero__text-wrapper">
+                  <h3>
+                    Невероятная природа Камчатки
+                  </h3>
+                  <p>
+                    Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.
+                  </p>
+                  <a class="hero__link button" href="#">
+                    Смотреть тур
+                  </a>
+
+                  <div class="hero__decorative-pictures-wrapper">
+                    <div class="hero__decorative-picture-wrapper hero__decorative-picture-wrapper--left">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)" srcset="./img/kamchatka-1-desktop@1x.webp 1x, ./img/kamchatka-1-desktop@2x.webp 2x" width="308" height="407">
+                        <source type="image/webp" srcset="./img/kamchatka-1-tablet@1x.webp 1x, ./img/kamchatka-1-tablet@1x.webp 2x" width="266" height="351">
+                        <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/kamchatka-1-desktop@1x.png 1x, ./img/kamchatka-1-desktop@2x.png 2x" width="308" height="407">
+                        <img class="hero__decorative-picture" src="./img/kamchatka-1-tablet@1x.png" srcset="./img/kamchatka-1-tablet@2x.png 2x" width="266" height="351" alt="Бирюзовый водоём в седловине горы.">
+                      </picture>
+                    </div>
+                    <div class="hero__decorative-picture-wrapper hero__decorative-picture-wrapper--right">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 1440px)" srcset="./img/kamchatka-2-desktop@1x.webp 1x, ./img/kamchatka-2-desktop@2x.webp 2x" width="277" height="366">
+                        <source type="image/webp" srcset="./img/kamchatka-2-tablet@1x.webp 1x, ./img/kamchatka-2-tablet@1x.webp 2x" width="236" height="312">
+                        <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/kamchatka-2-desktop@1x.png 1x, ./img/kamchatka-2-desktop@2x.png 2x" width="277" height="366">
+                        <img class="hero__decorative-picture" src="./img/kamchatka-2-tablet@1x.png" srcset="./img/kamchatka-2-tablet@2x.png 2x" width="236" height="312" alt="Девушка занимается хайкингом в горах.">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero__information-wrapper">
+                  <span class="hero__information hero__information--duration ">
+                    9 дней/10 ночей
+                  </span>
+                  <span class="hero__information hero__information--difficulty">
+                    Средняя сложность
+                  </span>
+                </div>
+              </li>
+              <li class="hero__item swiper-slide">
+                <div class="hero__picture-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/hero-3-desktop@1x.webp 1x, ./img/hero-3-desktop@2x.webp 2x" width="1440" height="800">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/hero-3-tablet@1x.webp 1x, ./img/hero-3-tablet@2x.webp 2x" width="768" height="1034">
+                    <source type="image/webp" srcset="./img/hero-3-mobile@1x.webp 1x, ./img/hero-3-mobile@2x.webp 2x" width="320" height="568">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/hero-3-desktop@1x.jpg 1x, ./img/hero-3-desktop@2x.jpg 2x" width="1440" height="800">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/hero-3-tablet@1x.jpg 1x, ./img/hero-3-tablet@2x.jpg 2x" width="768" height="1034">
+                    <img class="hero__picture" src="./img/hero-3-mobile@1x.jpg" srcset="./img/hero-3-mobile@2x.jpg 2x" width="320" height="568" alt="Осень на Алтайском крае: водоём, горы и деревья.">
+                  </picture>
+                </div>
+                <div class="hero__text-wrapper">
+                  <h3>
+                    Магические пейзажи Алтайского Края
+                  </h3>
+                  <p>
+                    Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.
+                  </p>
+                  <a class="hero__link button" href="#">
+                    Смотреть тур
+                  </a>
+                </div>
+                <div class="hero__information-wrapper">
+                  <span class="hero__information hero__information--duration ">
+                    8 дней/7 ночей
+                  </span>
+                  <span class="hero__information hero__information--difficulty">
+                    Лёгкая сложность
+                  </span>
+                </div>
+              </li>
+            </ul>
+            <!-- <div class="hero__pagination"></div> -->
+          </div>
+        </div>
+      </section>
+
       <section class="tours" data-test="tours" id="tours">
         <div class="tours__container container">
           <div class="tours__title-wrapper">
@@ -373,7 +501,7 @@
         </div>
       </section>
 
-      <section class="training" data-test="training">
+      <section class="training" data-test="training" id="training">
         <div class="training__container container">
           <div class="training__education-wrapper">
             <h2 class="training__title main-title" data-main-title="Обучение">
@@ -577,6 +705,30 @@
         </div>
       </section>
 
+      <section class="about" data-test="about" id="about">
+        <div class="about__container container">
+          <h2 data-main-title="О нас">
+            О нас
+          </h2>
+          <div>
+            <h3>
+              История компании
+            </h3>
+            <p>
+              В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.
+            </p>
+          </div>
+          <div>
+            <h3>
+              Наша цель
+            </h3>
+            <p>
+              Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section class="advantages" data-test="adv">
         <div class="advantages__container container">
           <h2 class="advantages__title main-title" data-main-title="Преимущества">
@@ -701,7 +853,7 @@
     </main>
 
     <footer class="footer" data-test="footer">
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="contacts__container container">
           <div class="contacts__text-wrapper">
             <h2 class="contacts__title main-title" data-main-title="Контакты">

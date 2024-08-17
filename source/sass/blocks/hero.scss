@@ -1,0 +1,277 @@
+.hero__container {
+  padding: 0;
+}
+
+.hero__swiper-wrapper {
+  overflow: hidden;
+
+  width: $mobile-width;
+
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.hero__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__item {
+  position: relative;
+
+  height: auto;
+  min-height: 568px;
+
+  padding: 40px 15px 56px;
+
+  color: $basic-white;
+
+  background-color: rgb(133, 200, 245);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 1034px;
+
+    padding: 40px 45px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 800px;
+
+    padding: 200px 120px 80px;
+
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.hero__picture-wrapper {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  z-index: -50;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(112deg, rgba(15, 20, 41, 33%) 17%, rgba(15, 20, 41, 0) 95%);
+  }
+}
+
+.hero__picture {
+  display: block;
+
+  min-width: 100%;
+  max-width: auto;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.hero__decorative-pictures-wrapper {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: block;
+
+    width: 442px;
+    height: 365px;
+
+    margin: 45px auto 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+
+    margin: 0;
+
+    width: 410px;
+    height: 459px;
+
+    top: 187px;
+    right: 120px;
+
+    z-index: -20;
+  }
+}
+
+.hero__decorative-picture-wrapper {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+  }
+
+  &--left {
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &--right {
+    @media (min-width: $tablet-width) {
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.hero__decorative-picture {
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    min-width: 100%;
+    max-width: auto;
+    height: 100%;
+
+    object-fit: contain;
+  }
+}
+
+.hero__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+  }
+
+  h3 {
+    margin: 0;
+
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 100%;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 56px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 925px;
+
+      font-size: 77px;
+      text-align: left;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 15px 0 60px;
+
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      max-width: 500px;
+
+      padding-bottom: 35px;
+
+      font-size: 17px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 460px;
+
+      padding-top: 25px;
+
+      text-align: left;
+    }
+  }
+}
+
+.hero__link {
+  padding: 19px;
+
+  width: 180px;
+}
+
+.hero__information-wrapper {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    max-width: 780px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+.hero__information {
+  display: block;
+  position: relative;
+  padding: 13px 19px 13px 39px;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  border: 1px rgba($basic-white, 50%) solid;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+
+    background-repeat: no-repeat;
+  }
+
+  &--duration::before {
+    background-image: url("/__spritemap#sprite-duration-view");
+  }
+
+  &--difficulty::before {
+    background-image: url("/__spritemap#sprite-difficulty-view");
+  }
+}
+
+/////////////////////////////////////////////////////////////////////
+.hero__pagination {
+  background-color: rgb(4, 114, 9);
+  height: 20px;
+
+  display: flex;
+  gap: 20px;
+
+  span {
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(99, 0, 112);
+  }
+}
