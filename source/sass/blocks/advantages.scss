@@ -1,3 +1,78 @@
+.advantages {
+  position: relative;
+
+  &::before,
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: -50;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      width: 753px;
+      height: 402px;
+
+      top: 266px;
+      left: 0;
+
+      background-image: url("../../img/cloud-3-tablet@1x.png");
+
+      @media (min-resolution: $retina-resolution) {
+        background-image: url("../../img/cloud-3-tablet@2x.png");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 888px;
+
+      top: 120px;
+      transform: translateY(-100%);
+
+      background-image: url("../../img/cloud-3-desktop@1x.png");
+
+      @media (min-resolution: $retina-resolution) {
+        background-image: url("../../img/cloud-3-desktop@2x.png");
+      }
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      width: 555px;
+      height: 264px;
+
+      top: 765px;
+      right: 0;
+
+      background-image: url("../../img/cloud-4-tablet@1x.png");
+
+      @media (min-resolution: $retina-resolution) {
+        background-image: url("../../img/cloud-4-tablet@2x.png");
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 449px;
+      height: 263px;
+
+      top: 166px;
+      transform: translateY(-100%);
+
+      background-image: url("../../img/cloud-4-desktop@1x.png");
+
+      @media (min-resolution: $retina-resolution) {
+        background-image: url("../../img/cloud-4-desktop@2x.png");
+      }
+    }
+  }
+}
+
 .advantages__container {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -79,6 +154,7 @@
   align-items: center;
 
   border: 1px rgba($basic-blue, 10%) solid;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -162,6 +238,12 @@
       padding-top: 84px;
 
       font-size: 18px;
+    }
+  }
+
+  h3 > br {
+    @media (min-width: $desktop-width) {
+      display: none;
     }
   }
 

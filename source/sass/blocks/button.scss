@@ -8,4 +8,38 @@
 
   border: 1px $basic-blue solid;
   background-color: $basic-blue;
+
+  &:hover {
+    cursor: pointer;
+
+    color: $active;
+
+    border-color: $active;
+    background-color: $basic-white;
+  }
+
+  &:focus {
+    outline: none;
+
+    color: $active;
+
+    border-color: $basic-white;
+    background-color: $basic-white;
+  }
+
+  &:active {
+    color: $basic-white;
+
+    border-color: $active;
+    background-color: $active;
+  }
+
+  &:disabled {
+    pointer-events: none;
+
+    color: $basic-white;
+
+    border-color: $disabled;
+    background-color: $disabled;
+  }
 }
