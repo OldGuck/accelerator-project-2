@@ -125,12 +125,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  li {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .tours__item {
   position: relative;
 
-  margin: auto 0;
+  min-height: 100%;
 
   color: $basic-white;
 

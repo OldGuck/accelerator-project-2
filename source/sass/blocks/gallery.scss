@@ -3,13 +3,49 @@
   padding-bottom: 31px;
 
   color: $primary-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 106px 120px 44px;
+  }
 }
 
 .gallery__title {
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
+
+  &::after {
+    bottom: -13px;
+
+    @media (min-width: $tablet-width) {
+      bottom: -5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: 1px;
+    }
+  }
 }
 
 .gallery__description-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
   p {
     margin: 0;
 
@@ -17,14 +53,32 @@
     line-height: 18px;
 
     @media (min-width: $tablet-width) {
+      max-width: 426px;
+
       font-size: 14px;
       line-height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 592px;
+
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 }
 
 .gallery__button-wrapper {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .gallery__swiper-wrapper {
@@ -35,6 +89,16 @@
   margin: 0 auto;
 
   padding-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    overflow: visible;
+
+    width: $desktop-width;
+  }
 }
 
 .gallery__list {
@@ -42,23 +106,27 @@
   padding: 0;
   list-style: none;
 
-  // display: grid;
-  // grid-auto-columns: 158px 157px;
-  // grid-auto-columns: calc(158px + 5px);
-  // grid-auto-columns: 163px;
-  // grid-template-rows: 135px 125px;
-  // gap: 7px 5px;
-  // gap: 7px 0;
-  // grid-auto-flow: column;
-
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  li {
+    height: auto;
+
+    display: flex;
+
+    @media (min-width: $desktop-width) {
+      width: fit-content;
+    }
+  }
 }
 
 .gallery__item {
-  // width: 100%;
   height: auto;
-
-  // padding-right: 5px;
 
   &--double {
     display: flex;
@@ -70,7 +138,6 @@
 .gallery__picture {
   display: block;
 
-  // min-width: 100%;
   max-width: auto;
   height: 100%;
 

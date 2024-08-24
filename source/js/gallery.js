@@ -1,27 +1,31 @@
-import Swiper from './vendor/swiper-bundle';
+import Swiper from 'swiper';
+import 'swiper/css';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 
-new Swiper('.gallery__swiper-wrapper', {
-  navigation: {
-    prevEl: '.gallery__button--prev',
-    nextEl: '.gallery__button--next'
-  },
-  simulateTouch: true,
-  touchRatio: 1,
+const desktop = window.matchMedia('(min-width: 1440px)');
 
-  slidesPerView: 2,
-  spaceBetween: 5,
-  slidesPerGroup: 1,
-  // initialSlide: 1,
+if (!desktop.matches) {
+  new Swiper('.gallery__swiper-wrapper', {
+    modules: [Navigation],
 
+    navigation: {
+      prevEl: '.gallery__button--prev',
+      nextEl: '.gallery__button--next'
+    },
+    simulateTouch: true,
+    touchRatio: 1,
 
-  // breakpoints: {
-  //   768: {
-  //     slidesPerView: "auto",
-  //     spaceBetween: 30
-  //   },
-  //   1440: {
-  //     slidesPerView: "auto",
-  //     spaceBetween: 120
-  //   }
-  // }
-});
+    loop: true,
+    slidesPerGroup: 1,
+    slidesPerView: 2,
+    spaceBetween: 5,
+
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 5
+      }
+    }
+  });
+}

@@ -1,6 +1,11 @@
-import Swiper from './vendor/swiper-bundle';
+import Swiper from 'swiper';
+import 'swiper/css';
+import { Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 
 new Swiper('.instructors__swiper-wrapper', {
+  modules: [Navigation],
+
   navigation: {
     prevEl: '.instructors__button--prev',
     nextEl: '.instructors__button--next'

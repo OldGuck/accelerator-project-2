@@ -22,12 +22,17 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  li {
+    height: auto;
+
+    display: flex;
+  }
 }
 
 .hero__item {
   position: relative;
 
-  height: auto;
   min-height: 568px;
 
   padding: 40px 15px 56px;
@@ -36,8 +41,8 @@
 
   background-color: rgb(133, 200, 245);
 
-  display: flex;
   flex-direction: column;
+  gap: 20px;
   justify-content: center;
   align-items: center;
 
@@ -261,17 +266,17 @@
 }
 
 /////////////////////////////////////////////////////////////////////
-.hero__pagination {
-  background-color: rgb(4, 114, 9);
-  height: 20px;
+// .hero__pagination {
+//   background-color: rgb(4, 114, 9);
+//   height: 20px;
 
-  display: flex;
-  gap: 20px;
+//   display: flex;
+//   gap: 20px;
 
-  span {
-    display: block;
-    height: 20px;
-    width: 20px;
-    background-color: rgb(99, 0, 112);
-  }
-}
+//   span {
+//     display: block;
+//     height: 20px;
+//     width: 20px;
+//     background-color: rgb(99, 0, 112);
+//   }
+// }

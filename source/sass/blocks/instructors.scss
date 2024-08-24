@@ -64,17 +64,20 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  li {
+    height: auto;
+
+    display: grid;
+  }
 }
 
 .instructors__item {
-  height: auto;
-
   padding: 14px;
 
   border: 1px rgba($basic-blue, 10%) solid;
   background-color: $basic-white;
 
-  display: grid;
   grid-template-columns: auto 24px;
   grid-auto-rows: min-content;
   gap: 15px;
