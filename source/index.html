@@ -14,12 +14,6 @@
     <link rel="stylesheet" href="sass/style.scss">
   </head>
   <body class="page__body">
-    <!-- пример использования спрайта -->
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-
     <header class="header" data-test="header" id="header">
       <div class="header__container container">
         <button class="header__toggle-button header__toggle-button--closed" type="button">
@@ -720,7 +714,7 @@
         </div>
       </section>
 
-      <!-- <section class="reviews" data-test="reviews" id="reviews">
+      <section class="reviews" data-test="reviews" id="reviews">
         <div class="reviews__container container">
           <div class="reviews__title-wrapper">
             <h2 class="reviews__title main-title" data-main-title="Отзывы">
@@ -789,10 +783,10 @@
                 </div>
                 <div class="reviews__text-wrapper">
                   <p>
-                    Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века. Было очень интересно!
+                    Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века. Было очень интересно!
                   </p>
                   <p>
-                    Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам. Всем советую этот тур.
+                    Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам. Всем советую этот тур.
                   </p>
                 </div>
                 <div class="reviews__name-wrapper">
@@ -863,7 +857,7 @@
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <section class="advantages" data-test="adv">
         <div class="advantages__container container">
@@ -872,6 +866,47 @@
           </h2>
           <div class="advantages__swiper-wrapper swiper-container">
             <ul class="advantages__list swiper-wrapper">
+              <li class="advantages__item advantages__item--safety swiper-slide">
+                <h3>
+                  Безопасность
+                </h3>
+                <p>
+                  Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--knowledge swiper-slide">
+                <h3>
+                  Экспертиза и знания
+                </h3>
+                <p>
+                  Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--equipment swiper-slide">
+                <h3>
+                  Оборудование и снаряжение
+                </h3>
+                <p>
+                  Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--route swiper-slide">
+                <h3>
+                  Индивидуальные маршруты
+                </h3>
+                <p>
+                  Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.
+                </p>
+              </li>
+              <li class="advantages__item advantages__item--ecology swiper-slide">
+                <h3>
+                  Бережное отношение <br>к природе
+                </h3>
+                <p>
+                  Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
+                </p>
+              </li>
+              <!-- Дополнительные слайды для корректной работы swiper на desktop -->
               <li class="advantages__item advantages__item--safety swiper-slide">
                 <h3>
                   Безопасность
@@ -1117,6 +1152,7 @@
           </picture>
         </div>
       </section>
+
       <section class="addition">
         <div class="addition__container container">
           <h2 class="visually-hidden">
@@ -1232,17 +1268,6 @@
       </section>
     </footer>
 
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <!-- <div data-test="header">header block</div> -->
-    <!-- <div data-test="hero">hero</div> -->
-    <!-- <div data-test="tours">tours</div> -->
-    <!-- <div data-test="training">training</div> -->
-    <!-- <div data-test="about">about</div> -->
-    <!-- <div data-test="reviews">reviews</div> -->
-    <!-- <div data-test="adv">adv</div> -->
-    <!-- <div data-test="gallery">gallery</div> -->
-    <!-- <div data-test="form">form</div> -->
-    <!-- <div data-test="footer">footer</div> -->
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
