@@ -200,17 +200,25 @@
 
   &--interactive {
     &:hover {
-      opacity: 70%;
+      color: $basic-blue;
+      opacity: 10%;
     }
 
     &:focus {
       outline: none;
-      opacity: 50%;
+
+      color: $basic-blue;
     }
 
     &:active {
-      opacity: 30%;
+      color: $active;
+      opacity: 100%;
     }
+  }
+
+  &--disabled {
+    pointer-events: none;
+    color: $disabled;
   }
 
   br {
@@ -228,12 +236,4 @@
 
   display: block;
   object-fit: contain;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 600px;
-  }
 }

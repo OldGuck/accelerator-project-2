@@ -133,8 +133,27 @@
 
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form__input-wrapper {
+  position: relative;
+}
+
+.form__label {
+  position: absolute;
+
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: rgba($primary-grey, 50%);
+
+  @media (min-width: $tablet-width) {
+    left: 30px;
   }
 }
 
@@ -146,7 +165,7 @@
 
   font-size: 16px;
   line-height: 100%;
-  color: $primary-grey;
+  color: ($primary-grey, 50%);
 
   border: 1px rgba($basic-blue, 10%) solid;
   border-radius: 2px;
@@ -154,7 +173,46 @@
   &::placeholder {
     font-size: 16px;
     line-height: 100%;
-    color: $primary-grey;
+    color: transparent;
+  }
+
+  &:hover {
+    border-color: $basic-blue;
+  }
+
+  &:focus {
+    outline: none;
+
+    border-color: $primary-grey;
+
+    &::placeholder {
+      color: rgba($basic-blue, 50%);
+    }
+
+    ~ .form__label {
+      display: none;
+    }
+  }
+
+  &--error {
+    border-color: $error;
+  }
+
+  &:disabled {
+    pointer-events: none;
+
+    background-color: $basic-white;
+    border-color: $disabled;
+
+    ~ .form__label {
+      color: rgba($disabled, 50%);
+    }
+  }
+
+  &:not(:placeholder-shown) {
+    ~ .form__label {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {

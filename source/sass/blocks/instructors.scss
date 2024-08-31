@@ -51,15 +51,6 @@
   }
 }
 
-.instructors__button-wrapper {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    gap: 4px;
-  }
-}
-
 .instructors__list {
   margin: 0;
   padding: 0;
@@ -108,7 +99,6 @@
 .instructors__picture {
   display: block;
 
-  max-width: auto;
   height: 100%;
 
   object-fit: cover;

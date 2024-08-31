@@ -9,6 +9,8 @@
     <link rel="preload" href="fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="img/favicons/favicon-32.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lifetour</title>
     <link rel="stylesheet" href="sass/style.scss">
@@ -21,13 +23,13 @@
             Открыть меню навигации.
           </span>
         </button>
-        <a class="header__logo-link logo">
+        <div class="header__logo-wrapper logo">
           <img class="header__logo" src="/__spritemap#sprite-logo-view" width="142" height="42" alt="Логотип Lifetour.">
-        </a>
+        </div>
         <nav class="header__navigation header__navigation--closed navigation">
           <ul class="header__navigation-list navigation__list">
             <li class="header__navigation-item navigation__item">
-              <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+              <!-- Для состояния disabled необходимо добавить класс navigation__link с модификатором disabled -->
               <a class="header__navigation-link navigation__link" href="#tours">
                 <span class="header__navigation-text navigation__text">
                   Туры
@@ -35,7 +37,7 @@
               </a>
             </li>
             <li class="header__navigation-item navigation__item">
-              <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+              <!-- Для состояния disabled необходимо добавить класс navigation__link с модификатором disabled -->
               <a class="header__navigation-link navigation__link" href="#training">
                 <span class="header__navigation-text navigation__text">
                   Обучение
@@ -43,7 +45,7 @@
               </a>
             </li>
             <li class="header__navigation-item navigation__item">
-              <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+              <!-- Для состояния disabled необходимо добавить класс navigation__link с модификатором disabled -->
               <a class="header__navigation-link navigation__link" href="#about">
                 <span class="header__navigation-text navigation__text">
                   О нас
@@ -51,7 +53,7 @@
               </a>
             </li>
             <li class="header__navigation-item navigation__item">
-              <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+              <!-- Для состояния disabled необходимо добавить класс navigation__link с модификатором disabled -->
               <a class="header__navigation-link navigation__link" href="#reviews">
                 <span class="header__navigation-text navigation__text">
                   Отзывы
@@ -59,7 +61,7 @@
               </a>
             </li>
             <li class="header__navigation-item navigation__item">
-              <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+              <!-- Для состояния disabled необходимо добавить класс navigation__link с модификатором disabled -->
               <a class="header__navigation-link navigation__link" href="#gallery">
                 <span class="header__navigation-text navigation__text">
                   Фотографии
@@ -67,7 +69,7 @@
               </a>
             </li>
             <li class="header__navigation-item navigation__item">
-              <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+              <!-- Для состояния disabled необходимо добавить класс navigation__link с модификатором disabled -->
               <a class="header__navigation-link navigation__link" href="#contacts">
                 <span class="header__navigation-text navigation__text">
                   Контакты
@@ -76,7 +78,7 @@
             </li>
           </ul>
         </nav>
-        <!-- Для состояния disabled необходимо добавить класс phone--disabled -->
+        <!-- Для состояния disabled необходимо добавить класс phone с модификатором disabled -->
         <a class="header__phone phone" href="tel:88000000000">
           8 800 000-00-00
         </a>
@@ -112,6 +114,7 @@
                   <p>
                     В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.
                   </p>
+                  <!-- Для состояния disabled необходимо добавить класс button с модификатором disabled -->
                   <a class="hero__link button" href="#">
                     Смотреть тур
                   </a>
@@ -143,6 +146,7 @@
                   <p>
                     Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.
                   </p>
+                  <!-- Для состояния disabled необходимо добавить класс button с модификатором disabled -->
                   <a class="hero__link button" href="#">
                     Смотреть тур
                   </a>
@@ -192,6 +196,7 @@
                   <p>
                     Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.
                   </p>
+                  <!-- Для состояния disabled необходимо добавить класс button с модификатором disabled -->
                   <a class="hero__link button" href="#">
                     Смотреть тур
                   </a>
@@ -206,7 +211,7 @@
                 </div>
               </li>
             </ul>
-            <!-- <div class="hero__pagination"></div> -->
+            <div class="hero__pagination"></div>
           </div>
         </div>
       </section>
@@ -242,11 +247,11 @@
               <li class="tours__item swiper-slide">
                 <div class="tours__picture-wrapper">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/tours-1-desktop@1x.webp 1x, ./img/tours-1-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/tours-1-tablet@1x.webp 1x, ./img/tours-1-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="./img/tours-1-mobile@1x.webp 1x, ./img/tours-1-mobile@2x.webp 2x">
-                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/tours-1-desktop@1x.jpg 1x, ./img/tours-1-desktop@2x.jpg 2x">
-                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/tours-1-tablet@1x.jpg 1x, ./img/tours-1-tablet@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/tours-1-desktop@1x.webp 1x, ./img/tours-1-desktop@2x.webp 2x" width="380" height="416">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/tours-1-tablet@1x.webp 1x, ./img/tours-1-tablet@2x.webp 2x" width="330" height="416">
+                    <source type="image/webp" srcset="./img/tours-1-mobile@1x.webp 1x, ./img/tours-1-mobile@2x.webp 2x" width="290" height="416">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/tours-1-desktop@1x.jpg 1x, ./img/tours-1-desktop@2x.jpg 2x" width="380" height="416">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/tours-1-tablet@1x.jpg 1x, ./img/tours-1-tablet@2x.jpg 2x" width="330" height="416">
                     <img class="tours__picture" src="./img/tours-1-mobile@1x.jpg" srcset="./img/tours-1-mobile@2x.jpg 2x" width="290" height="416" alt="Эльбрус в лучах солнца.">
                   </picture>
                 </div>
@@ -300,11 +305,11 @@
               <li class="tours__item swiper-slide">
                 <div class="tours__picture-wrapper">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/tours-2-desktop@1x.webp 1x, ./img/tours-2-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/tours-2-tablet@1x.webp 1x, ./img/tours-2-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="./img/tours-2-mobile@1x.webp 1x, ./img/tours-2-mobile@2x.webp 2x">
-                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/tours-2-desktop@1x.jpg 1x, ./img/tours-2-desktop@2x.jpg 2x">
-                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/tours-2-tablet@1x.jpg 1x, ./img/tours-2-tablet@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/tours-2-desktop@1x.webp 1x, ./img/tours-2-desktop@2x.webp 2x" width="380" height="416">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/tours-2-tablet@1x.webp 1x, ./img/tours-2-tablet@2x.webp 2x" width="330" height="416">
+                    <source type="image/webp" srcset="./img/tours-2-mobile@1x.webp 1x, ./img/tours-2-mobile@2x.webp 2x" width="290" height="416">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/tours-2-desktop@1x.jpg 1x, ./img/tours-2-desktop@2x.jpg 2x" width="380" height="416">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/tours-2-tablet@1x.jpg 1x, ./img/tours-2-tablet@2x.jpg 2x" width="330" height="416">
                     <img class="tours__picture" src="./img/tours-2-mobile@1x.jpg" srcset="./img/tours-2-mobile@2x.jpg 2x" width="290" height="416" alt="Водоём у подножия Белухи.">
                   </picture>
                 </div>
@@ -358,11 +363,11 @@
               <li class="tours__item swiper-slide">
                 <div class="tours__picture-wrapper">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/tours-3-desktop@1x.webp 1x, ./img/tours-3-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/tours-3-tablet@1x.webp 1x, ./img/tours-3-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="./img/tours-3-mobile@1x.webp 1x, ./img/tours-3-mobile@2x.webp 2x">
-                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/tours-3-desktop@1x.jpg 1x, ./img/tours-3-desktop@2x.jpg 2x">
-                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/tours-3-tablet@1x.jpg 1x, ./img/tours-3-tablet@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/tours-3-desktop@1x.webp 1x, ./img/tours-3-desktop@2x.webp 2x" width="380" height="416">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/tours-3-tablet@1x.webp 1x, ./img/tours-3-tablet@2x.webp 2x" width="330" height="416">
+                    <source type="image/webp" srcset="./img/tours-3-mobile@1x.webp 1x, ./img/tours-3-mobile@2x.webp 2x" width="290" height="416">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/tours-3-desktop@1x.jpg 1x, ./img/tours-3-desktop@2x.jpg 2x" width="380" height="416">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/tours-3-tablet@1x.jpg 1x, ./img/tours-3-tablet@2x.jpg 2x" width="330" height="416">
                     <img class="tours__picture" src="./img/tours-3-mobile@1x.jpg" srcset="./img/tours-3-mobile@2x.jpg 2x" width="290" height="416" alt="Горная вершина Фишт в облаках.">
                   </picture>
                 </div>
@@ -416,11 +421,11 @@
               <li class="tours__item swiper-slide">
                 <div class="tours__picture-wrapper">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/tours-4-desktop@1x.webp 1x, ./img/tours-4-desktop@2x.webp 2x">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/tours-4-tablet@1x.webp 1x, ./img/tours-4-tablet@2x.webp 2x">
-                    <source type="image/webp" srcset="./img/tours-4-mobile@1x.webp 1x, ./img/tours-4-mobile@2x.webp 2x">
-                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/tours-4-desktop@1x.jpg 1x, ./img/tours-4-desktop@2x.jpg 2x">
-                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/tours-4-tablet@1x.jpg 1x, ./img/tours-4-tablet@2x.jpg 2x">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="./img/tours-4-desktop@1x.webp 1x, ./img/tours-4-desktop@2x.webp 2x" width="380" height="416">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/tours-4-tablet@1x.webp 1x, ./img/tours-4-tablet@2x.webp 2x" width="330" height="416">
+                    <source type="image/webp" srcset="./img/tours-4-mobile@1x.webp 1x, ./img/tours-4-mobile@2x.webp 2x" width="290" height="416">
+                    <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/tours-4-desktop@1x.jpg 1x, ./img/tours-4-desktop@2x.jpg 2x" width="380" height="416">
+                    <source type="image/jpg" media="(min-width: 768px)" srcset="./img/tours-4-tablet@1x.jpg 1x, ./img/tours-4-tablet@2x.jpg 2x" width="330" height="416">
                     <img class="tours__picture" src="./img/tours-4-mobile@1x.jpg" srcset="./img/tours-4-mobile@2x.jpg 2x" width="290" height="416" alt="Растения на горе Манарага.">
                   </picture>
                 </div>
@@ -474,7 +479,7 @@
             </ul>
           </div>
 
-          <!-- Для состояния disabled необходимо добавить класс tours__button-link--disabled -->
+          <!-- Для состояния disabled необходимо добавить класс tours__button-link с модификатором disabled -->
           <a class="tours__button-link" href="#">
             <span class="tours__button-link-text">
               Показать все туры
@@ -536,7 +541,7 @@
                   <h4>
                     Александр <br>Прокофьев
                   </h4>
-                  <!-- Для состояния disabled необходимо добавить класс social-link--disabled -->
+                  <!-- Для состояния disabled необходимо добавить класс social-link с модификатором disabled -->
                   <a class="instructors__social-link social-link" href="https://vk.com/">
                     <svg class="instructors__social-icon social-link__icon" width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
@@ -563,7 +568,7 @@
                   <h4>
                     Светлана <br>Афиногенова
                   </h4>
-                  <!-- Для состояния disabled необходимо добавить класс social-link--disabled -->
+                  <!-- Для состояния disabled необходимо добавить класс social-link с модификатором disabled -->
                   <a class="instructors__social-link social-link" href="https://vk.com/">
                     <svg class="instructors__social-icon social-link__icon" width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
@@ -590,7 +595,7 @@
                   <h4>
                     Надежда <br>Колесниченко
                   </h4>
-                  <!-- Для состояния disabled необходимо добавить класс social-link--disabled -->
+                  <!-- Для состояния disabled необходимо добавить класс social-link с модификатором disabled -->
                   <a class="instructors__social-link social-link" href="https://vk.com/">
                     <svg class="instructors__social-icon social-link__icon" width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
@@ -617,7 +622,7 @@
                   <h4>
                     Федор <br>Кайгородов
                   </h4>
-                  <!-- Для состояния disabled необходимо добавить класс social-link--disabled -->
+                  <!-- Для состояния disabled необходимо добавить класс social-link с модификатором disabled -->
                   <a class="instructors__social-link social-link" href="https://vk.com/">
                     <svg class="instructors__social-icon social-link__icon" width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
@@ -644,7 +649,7 @@
                   <h4>
                     Даниэль <br>Васнецов
                   </h4>
-                  <!-- Для состояния disabled необходимо добавить класс social-link--disabled -->
+                  <!-- Для состояния disabled необходимо добавить класс social-link с модификатором disabled -->
                   <a class="instructors__social-link social-link" href="https://vk.com/">
                     <svg class="instructors__social-icon social-link__icon" width="14" height="8">
                       <use href="/__spritemap#sprite-vk"></use>
@@ -906,47 +911,6 @@
                   Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
                 </p>
               </li>
-              <!-- Дополнительные слайды для корректной работы swiper на desktop -->
-              <li class="advantages__item advantages__item--safety swiper-slide">
-                <h3>
-                  Безопасность
-                </h3>
-                <p>
-                  Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.
-                </p>
-              </li>
-              <li class="advantages__item advantages__item--knowledge swiper-slide">
-                <h3>
-                  Экспертиза и знания
-                </h3>
-                <p>
-                  Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.
-                </p>
-              </li>
-              <li class="advantages__item advantages__item--equipment swiper-slide">
-                <h3>
-                  Оборудование и снаряжение
-                </h3>
-                <p>
-                  Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.
-                </p>
-              </li>
-              <li class="advantages__item advantages__item--route swiper-slide">
-                <h3>
-                  Индивидуальные маршруты
-                </h3>
-                <p>
-                  Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.
-                </p>
-              </li>
-              <li class="advantages__item advantages__item--ecology swiper-slide">
-                <h3>
-                  Бережное отношение <br>к природе
-                </h3>
-                <p>
-                  Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
-                </p>
-              </li>
             </ul>
           </div>
           <div class="advantages__button-wrapper slider">
@@ -1049,7 +1013,7 @@
                 <source type="image/webp" srcset="./img/gallery-5-mobile@1x.webp 1x, ./img/gallery-5-mobile@2x.webp 2x" width="157" height="135">
                 <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/gallery-5-desktop@1x.jpg 1x, ./img/gallery-5-desktop@2x.jpg 2x" width="284" height="233">
                 <source type="image/jpg" media="(min-width: 768px)" srcset="./img/gallery-5-tablet@1x.jpg 1x, ./img/gallery-5-tablet@2x.jpg 2x" width="252" height="210">
-                <img class="gallery__picture" src="./img/gallery-5-mobile@1x.jpg" srcset="./img/gallery-5-mobile@2x.jpg 2x" width="157" height="135" alt="Вечерний пикник у костра.">
+                <img class="gallery__picture" src="./img/gallery-5-mobile@1x.jpg" srcset="./img/gallery-5-mobile@2x.jpg 2x" width="157" height="135" alt="Поход вдоль ледяной реки.">
               </picture>
 
               <picture>
@@ -1058,7 +1022,7 @@
                 <source type="image/webp" srcset="./img/gallery-6-mobile@1x.webp 1x, ./img/gallery-6-mobile@2x.webp 2x" width="157" height="125">
                 <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/gallery-6-desktop@1x.jpg 1x, ./img/gallery-6-desktop@2x.jpg 2x" width="284" height="223">
                 <source type="image/jpg" media="(min-width: 768px)" srcset="./img/gallery-6-tablet@1x.jpg 1x, ./img/gallery-6-tablet@2x.jpg 2x" width="252" height="202">
-                <img class="gallery__picture" src="./img/gallery-6-mobile@1x.jpg" srcset="./img/gallery-6-mobile@2x.jpg 2x" width="157" height="125" alt="Человек держит компас в руке на вершине скалы.">
+                <img class="gallery__picture" src="./img/gallery-6-mobile@1x.jpg" srcset="./img/gallery-6-mobile@2x.jpg 2x" width="157" height="125" alt="Привал: одинокая палатка и звёдное небо.">
               </picture>
             </li>
 
@@ -1086,16 +1050,16 @@
           </p>
           <form class="form__main-wrapper" method="post" action="https://echo.htmlacademy.ru">
             <div class="form__input-wrapper">
-              <label class="visually-hidden" for="phone">
-                Введите номер телефона
+              <input class="form__input form__input--phone" id="phone" type="tel" name="phone" placeholder="+7 (000)-000-00-00" pattern="^([+]{1}|[0-9])[0-9 ]+$" autocomplete="off" required>
+              <label class="form__label" for="phone">
+                Телефон
               </label>
-              <input class="form__input form__input--phone" id="phone" type="text" name="phone" placeholder="Телефон" required>
             </div>
             <div class="form__input-wrapper">
-              <label class="visually-hidden" for="email">
-                Введите email
+              <input class="form__input form__input--email" id="email" type="text" name="email" placeholder="electronic@mail.рф" pattern="^[A-Za-z0-9]+@[A-Za-z]+.[р]+[ф]+$" autocomplete="off" required>
+              <label class="form__label" for="email">
+                Email
               </label>
-              <input class="form__input form__input--email" id="email" type="email" name="email" placeholder="Email" required>
             </div>
             <button class="form__button button" type="submit">
               Отправить
@@ -1120,6 +1084,7 @@
                 <h3 class="contacts__name">
                   Телефон
                 </h3>
+                <!-- Для состояния disabled необходимо добавить класс contacts__text с модификатором disabled -->
                 <a class="contacts__text contacts__text--interactive" href="tel:+79837454545">
                   +7 983 745-45-45
                 </a>
@@ -1128,6 +1093,7 @@
                 <h3 class="contacts__name">
                   Email
                 </h3>
+                <!-- Для состояния disabled необходимо добавить класс contacts__text с модификатором disabled -->
                 <a class="contacts__text contacts__text--interactive" href="mailto:info@lifetour.com">
                   info@lifetour.com
                 </a>
@@ -1143,12 +1109,12 @@
             </ul>
           </div>
           <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="./img/map-desktop@1x.webp 1x, ./img/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet@1x.webp 1x, ./img/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/map-mobile@1x.webp 1x, ./img/map-mobile@2x.webp 2x">
-            <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x">
-            <source type="image/jpg" media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x">
-            <img class="contacts__map" src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" width="320" height="343" alt="Мы на карте г. Москва, пр-т Мира, д. 14, офис 101.">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="./img/map-desktop@1x.webp 1x, ./img/map-desktop@2x.webp 2x" width="600" height="324">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet@1x.webp 1x, ./img/map-tablet@2x.webp 2x" width="768" height="340">
+            <source type="image/webp" srcset="./img/map-mobile@1x.webp 1x, ./img/map-mobile@2x.webp 2x" width="320" height="343">
+            <source type="image/jpg" media="(min-width: 1440px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x" width="600" height="324">
+            <source type="image/jpg" media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x" width="768" height="340">
+            <img class="contacts__map" src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" width="320" height="343" alt="Мы на карте: г. Москва, пр-т Мира, д. 14, офис 101.">
           </picture>
         </div>
       </section>
@@ -1158,6 +1124,7 @@
           <h2 class="visually-hidden">
             Дополнительная навигация
           </h2>
+          <!-- Для состояния disabled необходимо добавить класс addition__logo-link с модификатором disabled -->
           <a class="addition__logo-link logo" href="#header">
             <img class="addition__logo" src="/__spritemap#sprite-logo-dark-view" width="142" height="42" alt="Логотип Lifetour.">
             <span class="visually-hidden">
@@ -1167,7 +1134,7 @@
           <nav class="addition__navigation navigation">
             <ul class="addition__navigation-list navigation__list">
               <li class="addition__navigation-item navigation__item">
-                <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+                <!-- Для состояния disabled необходимо добавить класс navigation__link с модификатором disabled -->
                 <a class="addition__navigation-link navigation__link navigation__link--dark" href="#tours">
                   <span class="addition__navigation-text navigation__text navigation__text--dark">
                     Туры
@@ -1175,7 +1142,7 @@
                 </a>
               </li>
               <li class="addition__navigation-item addition__navigation-item--training navigation__item">
-                <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+                <!-- Для состояния disabled необходимо добавить класс navigation__link с модификатором disabled -->
                 <a class="addition__navigation-link navigation__link navigation__link--dark" href="#training">
                   <span class="addition__navigation-text navigation__text navigation__text--dark">
                     Обучение
@@ -1183,7 +1150,7 @@
                 </a>
               </li>
               <li class="addition__navigation-item addition__navigation-item--about navigation__item">
-                <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+                <!-- Для состояния disabled необходимо добавить класс navigation__link с модификатором disabled -->
                 <a class="addition__navigation-link navigation__link navigation__link--dark" href="#about">
                   <span class="addition__navigation-text navigation__text navigation__text--dark">
                     О нас
@@ -1191,7 +1158,7 @@
                 </a>
               </li>
               <li class="addition__navigation-item navigation__item">
-                <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+                <!-- Для состояния disabled необходимо добавить класс navigation__link с модификатором disabled -->
                 <a class="addition__navigation-link navigation__link navigation__link--dark" href="#reviews">
                   <span class="addition__navigation-text navigation__text navigation__text--dark">
                     Отзывы
@@ -1199,7 +1166,7 @@
                 </a>
               </li>
               <li class="addition__navigation-item navigation__item">
-                <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+                <!-- Для состояния disabled необходимо добавить класс navigation__link с модификатором disabled -->
                 <a class="addition__navigation-link navigation__link navigation__link--dark" href="#gallery">
                   <span class="addition__navigation-text navigation__text navigation__text--dark">
                     Фотографии
@@ -1207,7 +1174,7 @@
                 </a>
               </li>
               <li class="addition__navigation-item navigation__item">
-                <!-- Для состояния disabled необходимо добавить класс navigation__link--disabled -->
+                <!-- Для состояния disabled необходимо добавить класс navigation__link с модификатором disabled -->
                 <a class="addition__navigation-link navigation__link navigation__link--dark" href="#contacts">
                   <span class="addition__navigation-text navigation__text navigation__text--dark">
                     Контакты
@@ -1216,7 +1183,7 @@
               </li>
             </ul>
           </nav>
-          <!-- Для состояния disabled необходимо добавить класс phone--disabled -->
+          <!-- Для состояния disabled необходимо добавить класс phone с модификатором disabled -->
           <a class="addition__phone phone phone--dark" href="tel:88007253232">
             8 800 725-32-32
           </a>
@@ -1227,7 +1194,7 @@
             </h2>
             <ul class="socials__list">
               <li class="socials__item">
-                <!-- Для состояния disabled необходимо добавить класс social-link--disabled -->
+                <!-- Для состояния disabled необходимо добавить класс social-link с модификатором disabled -->
                 <a class="socials__link social-link" href="https://vk.com/">
                   <svg class="socials__icon social-link__icon" width="16" height="9">
                     <use href="/__spritemap#sprite-vk"></use>
@@ -1238,7 +1205,7 @@
                 </a>
               </li>
               <li class="socials__item">
-                <!-- Для состояния disabled необходимо добавить класс social-link--disabled -->
+                <!-- Для состояния disabled необходимо добавить класс social-link с модификатором disabled -->
                 <a class="socials__link social-link" href="https://ok.ru/">
                   <svg class="socials__icon social-link__icon" width="9" height="16">
                     <use href="/__spritemap#sprite-ok"></use>
@@ -1249,7 +1216,7 @@
                 </a>
               </li>
               <li class="socials__item">
-                <!-- Для состояния disabled необходимо добавить класс social-link--disabled -->
+                <!-- Для состояния disabled необходимо добавить класс social-link с модификатором disabled -->
                 <a class="socials__link social-link" href="https://www.reddit.com/">
                   <svg class="socials__icon social-link__icon" width="14" height="15">
                     <use href="/__spritemap#sprite-reddit"></use>
@@ -1261,6 +1228,7 @@
               </li>
             </ul>
           </div>
+          <!-- Для состояния disabled необходимо добавить класс addition__privacy-policy-link с модификатором disabled -->
           <a class="addition__privacy-policy-link" href="#">
             Политика конфиденциальности
           </a>

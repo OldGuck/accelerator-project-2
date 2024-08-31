@@ -13,7 +13,7 @@
 
     display: grid;
     grid-template-columns: min-content auto;
-    gap: 27px 0;
+    gap: 27px 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,11 +41,18 @@
 
   &:focus {
     outline: none;
+
     opacity: 50%;
   }
 
   &:active {
     opacity: 30%;
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    opacity: 10%;
   }
 }
 
@@ -66,9 +73,11 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 1px 50px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: flex-end;
   }
@@ -142,5 +151,11 @@
 
   &:active {
     opacity: 30%;
+  }
+
+  &--disabled {
+    pointer-events: none;
+
+    opacity: 10%;
   }
 }

@@ -141,11 +141,11 @@
 
     @media (min-width: $tablet-width) {
       width: 324px;
+      height: auto;
     }
 
     @media (min-width: $desktop-width) {
       width: 380px;
-      height: auto;
     }
   }
 }
@@ -175,14 +175,6 @@
     min-height: auto;
 
     padding: 39px 19px;
-  }
-
-  &:nth-last-of-type(-n+5) {
-    display: none;
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-    }
   }
 
   &::before {

@@ -69,13 +69,6 @@
 }
 
 .gallery__button-wrapper {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    gap: 4px;
-  }
-
   @media (min-width: $desktop-width) {
     display: none;
   }
@@ -138,7 +131,6 @@
 .gallery__picture {
   display: block;
 
-  max-width: auto;
   height: 100%;
 
   object-fit: cover;

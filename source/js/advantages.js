@@ -1,21 +1,32 @@
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css/navigation';
+
+const advantagesList = document.querySelector('.advantages__list');
+const advantagesItems = document.querySelectorAll('.advantages__item');
 
 const desktop = window.matchMedia('(min-width: 1440px)');
 
-if (desktop.matches) {
-  new Swiper('.advantages__swiper-wrapper', {
-    modules: [Navigation],
+let newItems = [];
 
+if (desktop.matches) {
+  advantagesItems.forEach((item) => {
+    const newItem = item.cloneNode(true);
+    newItems.push(newItem);
+  });
+
+  newItems.forEach((item) => {
+    advantagesList.appendChild(item);
+  });
+
+  new Swiper('.advantages__swiper-wrapper', {
     navigation: {
       prevEl: '.advantages__button--prev',
       nextEl: '.advantages__button--next'
     },
+
+    simulateTouch: false,
+    touchRatio: 0.5,
     loop: true,
-    simulateTouch: true,
-    touchRatio: 1,
 
     slidesPerView: "auto",
     spaceBetween: 30,
@@ -23,6 +34,6 @@ if (desktop.matches) {
     slidesPerGroup: 2,
 
     centeredSlides: true,
-    initialSlide: 2,
+    initialSlide: 2
   });
 }
