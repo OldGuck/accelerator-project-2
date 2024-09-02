@@ -83,25 +83,30 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0;
+    padding: 135px 0 100px;
   }
 }
 
 .advantages__title {
-  margin-bottom: 49px;
+  margin-bottom: 37px;
 
   text-align: center;
 
   &::after {
     left: 50%;
     transform: translateX(-50%);
+
+    @media (min-width: $desktop-width) {
+      bottom: 10px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
     padding: 0 120px;
   }
 }

@@ -2,43 +2,48 @@
   position: relative;
 
   margin: 0;
+  padding-top: 16px;
 
   font-weight: 800;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 100%;
-  color: rgba($primary-grey, 3%);
+  color: $primary-grey;
 
   &::after {
     content: attr(data-main-title);
     position: absolute;
 
     font-weight: 800;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 100%;
-    color: $primary-grey;
+    color: rgba($primary-grey, 3%);
 
-    bottom: -12px;
+    bottom: 12px;
     left: 0;
-    z-index: 20;
+    z-index: -10;
 
     @media (min-width: $tablet-width) {
-      font-size: 25px;
+      font-size: 40px;
 
-      bottom: -5px;
+      bottom: 5px;
     }
 
     @media (min-width: $desktop-width) {
-      font-size: 35px;
+      font-size: 55px;
 
-      bottom: 1px;
+      bottom: 0;
     }
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 40px;
+    padding-top: 20px;
+
+    font-size: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 55px;
+    padding-top: 23px;
+
+    font-size: 35px;
   }
 }

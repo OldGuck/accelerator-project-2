@@ -6,7 +6,7 @@ const advantagesItems = document.querySelectorAll('.advantages__item');
 
 const desktop = window.matchMedia('(min-width: 1440px)');
 
-let newItems = [];
+const newItems = [];
 
 if (desktop.matches) {
   advantagesItems.forEach((item) => {
@@ -28,7 +28,7 @@ if (desktop.matches) {
     touchRatio: 0.5,
     loop: true,
 
-    slidesPerView: "auto",
+    slidesPerView: 'auto',
     spaceBetween: 30,
 
     slidesPerGroup: 2,

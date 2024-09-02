@@ -78,19 +78,14 @@
 }
 
 .training__title {
-  margin-bottom: 47px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 41px;
+    margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 29px;
-  }
-
-  &::after {
-    @media (min-width: $desktop-width) {
-      bottom: 3px;
-    }
+    margin-bottom: 32px;
+    padding-top: 17px;
   }
 }

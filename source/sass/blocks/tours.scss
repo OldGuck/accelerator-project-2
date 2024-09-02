@@ -73,27 +73,22 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 53px;
+    margin-bottom: 50px;
   }
 }
 
 .tours__title {
-  margin-bottom: 54px;
+  margin-bottom: 39px;
+  padding-top: 19px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    padding-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-  }
-
-  &::after {
-    bottom: -15px;
-
-    @media (min-width: $tablet-width) {
-      bottom: -5px;
-    }
+    padding-top: 23px;
   }
 }
 

@@ -15,11 +15,11 @@ new Swiper('.reviews__swiper-wrapper', {
 
   breakpoints: {
     768: {
-      slidesPerView: "auto",
+      slidesPerView: 'auto',
       spaceBetween: 30
     },
     1440: {
-      slidesPerView: "auto",
+      slidesPerView: 'auto',
       spaceBetween: 120
     }
   }

@@ -11,7 +11,7 @@
 }
 
 .reviews__title-wrapper {
-  margin-bottom: 29px;
+  margin-bottom: 17px;
   padding: 0 15px;
 
   @media (min-width: $tablet-width) {
@@ -31,11 +31,16 @@
 
 .reviews__title {
   @media (min-width: $tablet-width) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
+    margin-bottom: 0;
+    padding-top: 45px;
+  }
+
+  &::after {
+    bottom: 25px;
   }
 }
 
